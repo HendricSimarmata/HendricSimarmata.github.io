@@ -1,6 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53681345-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53681345-13');
+</script>
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
@@ -548,25 +558,40 @@
                           </section>
                         </div>
                         <div class="col-md-6">
-                          <div class="contact-info">
-                            <form class="js-form" novalidate="novalidate">
-                              <div class="row">
-                                <div class="form-group col-sm-6">
-                                  <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
+                          <div class="contact-info" data-form-type="formoid">
+                            <form class="js-form form" name="contactForm" action-xhr="https://formoid.net/api/amp-form/push" method="post" target="_top" data-form-title="Mobirise Form">
+								<input class="form-control" type="hidden" name="email" value="wzv4LQENv0GAjVYwOIVa2kh6rkLsQcYptsK5PU5uuJFQEIH4Biz6hmjlQzs4x6eua/NGjlof+LH9mdmn04brCzr1h5g1dvQJHDwv6J1/CF0VkDESiqGYqKJNjFfmaj1F&quot;" data-form-email="true">
+								<div class="form-row">
+								  <div submit-success="">
+									  <div class="form-group form-group-message col-sm-12">
+										  <template data-form-alert="" type="amp-mustache">Pesan Terkirim. Terimakasih.</template>
+									  </div>
+								  </div>
+								  <div  submit-error="">
+									  <div class="form-group form-group-message col-sm-12">
+										  <template data-form-alert="" type="amp-mustache">Failed! {{error}}</template>
+									  </div>
+								  </div>
+									  </div>
+                              <div class="row" data-for="form[data][1][1]">
+                                <div class="form-group col-sm-6" data-for="form[data][1][1]">
+									<input type="hidden" name="form[data][0][0]" value="Name" id="form[data][1][0]-contacts2-5" data-form-field="">
+                                  	<input type="text" id="name" required="" placeholder="Name*" required name="form[data][0][1]" data-form-field="Name" id="form[data][1][1]-contacts2-5">
                                 </div>
-                                <div class="form-group col-sm-6">
-                                  <input type="email" required="" name="email" placeholder="Email*">
+                                <div class="form-group col-sm-6" data-for="form[data][0][1]">
+									<input type="hidden" class="form-control" name="form[data][2][0]" value="Email" id="form[data][0][0]-contacts2-5" data-form-field="">
+                                  	<input type="email" id="email" placeholder="Email*" required name="form[data][2][1]" data-form-field="Email" id="form[data][0][1]-contacts2-5">
                                 </div>
                                 <div class="form-group col-sm-12">
-                                  <input type="text" name="subject" placeholder="Subject (Optinal)">
+									<input type="hidden" name="form[data][1][0]" value="Subject" id="form[data][2][0]-contacts2-5" data-form-field="">
+                                  	<input type="text" placeholder="Subject (Optinal)" name="form[data][1][1]" data-form-field="Phone" id="form[data][2][1]-contacts2-5">
                                 </div>
-                                <div class="form-group col-sm-12">
-                                  <textarea name="message" required="" placeholder="Message*"></textarea>
+                                <div class="form-group col-sm-12" data-for="form[data][3][1]">
+									<input type="hidden" name="form[data][3][0]" value="Message" id="form[data][3][0]-contacts2-5" data-form-field="">
+                                  	<textarea name="form[data][3][1]" data-form-field="Message" placeholder="Message*" required id="form[data][3][1]-contacts2-5"></textarea>
                                 </div>
-                                <div class="form-group form-group-message col-sm-12">
-                                  <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
-                                  <span id="error" class="text-primary">Sorry, something went wrong </span>
-                                </div>
+								  
+                                
                                 <div class="col-sm-12"><button type="submit" class="btn">Contact me</button></div>
                               </div>
                             </form>
