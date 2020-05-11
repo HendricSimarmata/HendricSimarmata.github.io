@@ -29,6 +29,13 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" media="screen">
+<!--<script async  src="https://cdn.ampproject.org/v0.js"></script>-->
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+	<!-- <script src="js/v0.js"></script> 
+<script src="jd/amp-mustache-0.2.js"></script>
+<script src="js/amp-form-0.1.js"></script>-->
 </head>
 <body>
   <div class="animsition">   
@@ -568,24 +575,24 @@
                         </div>
                         <div class="col-md-6">
                           <div class="contact-info">
-                            <form action="https://formspree.io/xlepdlwz" novalidate="novalidate" method="POST" id="my-form">
+                            <form class="js-form" novalidate="novalidate" action="https://formspree.io/xlepdlwz" method="POST" id="my-form">
                               <div class="row">
                                 <div class="form-group col-sm-6">
-                                  <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
+                                  <input type="text" id="name" name="name" required="" placeholder="Name*" aria-required="true">
                                 </div>
                                 <div class="form-group col-sm-6">
-                                  <input type="email" required="" name="email" placeholder="Email*">
+                                  <input type="email" id="email" required="" name="email" placeholder="Email*">
                                 </div>
                                 <div class="form-group col-sm-12">
-                                  <input type="text" name="subject" placeholder="Subject (Optinal)">
+                                  <input type="text" id="subject" name="subject" placeholder="Subject (Optinal)">
                                 </div>
                                 <div class="form-group col-sm-12">
-                                  <textarea name="message" required="" placeholder="Message*"></textarea>
+                                  <textarea name="message" id="message" required="" placeholder="Message*"></textarea>
                                 </div>
-                                <div class="form-group form-group-message col-sm-12">
+                                <!--<div class="form-group form-group-message col-sm-12">
                                   <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
                                   <span id="error" class="text-primary">Sorry, something went wrong </span>
-                                </div>
+                                </div>-->
                                 <div class="col-sm-12"><button type="submit" class="btn">Contact me</button></div>
                               </div>
                             </form>
@@ -615,6 +622,7 @@
 
 <!-- Scripts -->
 <script src="js/scripts.js"></script>
-<script src="js/form.js"></script>
+	
+<!-- <script src="js/form.js"></script> -->
 </body>
 </html>
