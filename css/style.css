@@ -383,7 +383,7 @@ label.error{
   display: inline-block;
 }
 
-.ion-ios-play{
+.pelet{
   position:relative;
   width: 5rem;
   height: 5rem;
@@ -399,12 +399,12 @@ label.error{
   transition: all .3s ease-out;
 }
 
-.ion-ios-play:hover{
+.pelet:hover{
   color: #c32865;
   border: 1px solid #c32865;
 }
 
-.ion-ios-play:after {
+.pelet:after {
   content: '';
   position: absolute;
   right: 100%;
