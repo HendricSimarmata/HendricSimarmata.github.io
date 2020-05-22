@@ -681,7 +681,7 @@ a.brand:focus{
 
 .social-list a{
   float: left;
-  font-size: 1.428rem;
+  font-size: 1.428rem!important;
   line-height: 1;
   color:#fff;
   margin-left: 2rem;
