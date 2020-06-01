@@ -4,8 +4,7 @@ title: My amazing post
 redirect_from:
   - /project1/
   - /index/
----
----
+
 permalink: /project/
 ---
 <!DOCTYPE HTML>
