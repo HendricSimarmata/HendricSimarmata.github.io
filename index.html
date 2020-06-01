@@ -28,22 +28,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="keywords"  content="Graphic Designer, ui, ux, illustrator, freelance, designer, hendric simarmata, hendric, simarmata" />
 <meta name="google-site-verification" content="IC3j7IwOIqOGVQTuXPEeoLflvlcxv2eMxvHEsxoz-Wk" />
 
-<!-- Twitter Card -->
-<meta name="p:domain_verify" content=" "/>
-<meta property="og:title" content="Hendric Simarmata" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
-<meta property="og:image:width" content="470" />
-<meta property="og:image:height" content="246" />
-<meta property="og:site_name" content="Hendric Simarmata" />
-<meta property="og:description" content="Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Palembang, Indonesia." />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@HendricMarmata" />
-<meta name="twitter:domain" content="hendricsimarmata.com" />
-<meta name="twitter:title" content="Hendric Simarmata" />
-<meta name="twitter:description" content="Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Palembang, Indonesia." />
-<meta name="twitter:image" content="favicon.png" />
+<!-- Twitter cards -->
+<meta name="twitter:site"    content="@{{ HendricMarmata }}">
+<meta name="twitter:creator" content="@{{ Hendric Simarmata }}">
+<meta name="twitter:title"   content="{{ Hendric Simarmata }}">
+
+{% if page.summary %}
+<meta name="twitter:description" content="{{ page.summary }}">
+{% else %}
+<meta name="twitter:description" content="{{ Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Palembang, Indonesia. }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ https://Hendricsimarmata.com }}{{ favicon.png }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ site.title_image }}">
+{% endif %}
+<!-- end of Twitter cards -->
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="favicon.png">
