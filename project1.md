@@ -2,6 +2,9 @@
 {}
 
 ---
+---
+permalink: /project/
+---
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
