@@ -36,12 +36,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% if page.summary %}
 <meta name="twitter:description" content="{{ page.summary }}">
 {% else %}
-<meta name="twitter:description" content="{{ Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Palembang, Indonesia. }}">
+<meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 
 {% if page.image %}
 <meta name="twitter:card"  content="summary_large_image">
-<meta name="twitter:image" content="{{ https://Hendricsimarmata.com }}{{ favicon.png }}">
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
 {% else %}
 <meta name="twitter:card"  content="summary">
 <meta name="twitter:image" content="{{ site.title_image }}">
