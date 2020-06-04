@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -9,9 +9,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PFGT7C3');</script>
 <!-- End Google Tag Manager -->
 	
-	<script src="https://www.googleoptimize.com/optimize.js?id=GTM-P365WGK"></script>
+<script src="https://www.googleoptimize.com/optimize.js?id=GTM-P365WGK"></script>
 	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53681345-4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -25,8 +25,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Palembang, Indonesia.">
 <meta name="author" content="Hendric Simarmata">
+<meta name="keywords"  content="Graphic Designer, ui, ux, illustrator, freelance, designer, hendric simarmata, hendric, simarmata" />
 <meta name="google-site-verification" content="IC3j7IwOIqOGVQTuXPEeoLflvlcxv2eMxvHEsxoz-Wk" />
-<meta name="p:domain_verify" content=" "/>
+
+<!-- Twitter cards -->
+<meta name="twitter:site"    content="@{{ HendricMarmata }}">
+<meta name="twitter:creator" content="@{{ Hendric Simarmata }}">
+<meta name="twitter:title"   content="{{ Hendric Simarmata }}">
+
+{% if page.summary %}
+<meta name="twitter:description" content="{{ page.summary }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+{% if page.image %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ site.title_image }}">
+{% endif %}
+<!-- end of Twitter cards -->
 
 <!-- Favicons -->
 <link rel="shortcut icon" href="favicon.png">
