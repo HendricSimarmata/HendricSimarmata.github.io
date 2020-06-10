@@ -57,7 +57,7 @@
 @import url('bootstrap-grid.css');
 @import url('animate.css');
 @import url('ionicons.min.css');
-@import url('linearicons.css');
+/*@import url('linearicons.css');*/
 @import url('animsition.css');
 @import url('magnific-popup.css');
 @import url('jquery.pagepiling.css');
@@ -109,6 +109,18 @@ body{
 
 /* 1.2 Typography */
 a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:after {
+	text-decoration: none;
+}
+
+a:before {
 	text-decoration: none;
 }
 
@@ -396,13 +408,14 @@ label.error{
   font-size: 1.5rem;
   margin-right:1.5rem;
   margin-top: 4rem;
-  color: #fff;
+  color: #ffffff;
   transition: all .3s ease-out;
 }
 
 .pelet:hover{
   color: #c32865;
   border: 1px solid #c32865;
+
 }
 
 .pelet:after {
@@ -412,8 +425,9 @@ label.error{
   top:50%;
   height: 1px;
   width: 99999rem;
-  background: #fff;
+  background: #ffffff;
   margin-right: 2rem;
+  text-decoration: none;
 }
 
 
@@ -1250,13 +1264,13 @@ a.brand:focus{
 }
 
 
-.popup-youtube{
+.projectdepan{
   display:inline-block;
   color:#fff;
   font-size: 1.26rem;
 }
 
-.popup-youtube:hover{
+.projectdepan:hover{
   text-decoration: none;
 }
 
@@ -1267,6 +1281,11 @@ a.brand:focus{
 
 
 .icon-specialization{
+  font-size:5rem;
+  color:#c32865;
+}
+
+.icon-special{
   font-size:5rem;
   color:#c32865;
 }
