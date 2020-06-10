@@ -46,10 +46,7 @@
  1. Global
 -------------------------------------------------------------------------------*/
 
-
-
 /* 1.1 General */
-
 
 @import url('bootstrap.css');
 @import url('bootstrap-grid.css');
@@ -60,6 +57,7 @@
 @import url('magnific-popup.css');
 @import url('jquery.pagepiling.css');
 @import url('owl.carousel.css');
+/*@import url('lightbox.css');*/
 
 
 html{
@@ -2161,7 +2159,3 @@ a.brand:focus{
   }
   
 }
-
-
-
-
