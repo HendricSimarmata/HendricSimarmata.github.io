@@ -1703,8 +1703,8 @@ a.brand:focus{
 }
 
 .col-partner{
-  padding:0 2rem;
-  margin-top: 5rem;
+  padding:0 1rem;
+  margin-top: 3rem;
   text-align: center;
   transition:all 0.7s;
   opacity: 0;
