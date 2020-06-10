@@ -407,6 +407,20 @@ label.error{
   transition: all .3s ease-out;
 }
 
+.behance{
+	font-size: 1.5rem;
+}
+
+.behance:hover,
+.behance:focus{
+	background-color:#053eff!important;
+/*  	color: #fff;
+  		-webkit-box-shadow:none;
+  	box-shadow: none;
+  	outline: none!important;
+	background-color: ;*/
+}
+
 .pelet:hover{
   color: #c32865;
   border: 1px solid #c32865;
@@ -1689,7 +1703,7 @@ a.brand:focus{
 }
 
 .col-partner{
-  padding:0 5rem;
+  padding:0 2rem;
   margin-top: 5rem;
   text-align: center;
   transition:all 0.7s;
