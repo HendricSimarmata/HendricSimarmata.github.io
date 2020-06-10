@@ -351,8 +351,9 @@ textarea::-webkit-input-placeholder {
 }
 
 label.error{
-  color: #fff;
+  color: #FF0004;
   margin:0.8rem 0 0;
+  padding: 3px;
 }
 
 
