@@ -8,11 +8,17 @@ logo: /favicon.png
 description: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
 author: Hendric Simarmata
   name: Hendric Simarmata
+  display_name: Hendric Simarmata
+  gravatar: https://s.gravatar.com/avatar/fa4c2f1d934d41ccc9cb848535e377ce
   email: contact@hendricsimarmata.com
-  twitter: HendricMarmata
-social: HendricSimarmata
+  twitter: https://twitter.com/hendricmarmata
+  facebook: https://facebook.com/hendricmarmata
+  website: https://hendricsimarmata.com
+  
 
+markdown:  kramdown
 permalink: pretty
+paginate:  11
 
 plugins:
         - jekyll-sitemap
