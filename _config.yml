@@ -1,13 +1,20 @@
 #-- Site
+name: Hendric Simarmata
 title: Hendric Simarmata
-url: "https://hendricsimarmata.com"
+description: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
+logo: 'assets/favicon.png'
+favicon: 'assets/favicon.png'
+baseurl: 'https://hendricsimarmata.com'
+google_analytics: 'UA-53681345-4'
+permalink: /:title/
+
 
 # SEO
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /favicon.png
-description: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
+
 author: Hendric Simarmata
-  name: Hendric Simarmata
+
   display_name: Hendric Simarmata
   gravatar: https://s.gravatar.com/avatar/fa4c2f1d934d41ccc9cb848535e377ce
   email: contact@hendricsimarmata.com
@@ -15,10 +22,17 @@ author: Hendric Simarmata
   facebook: https://facebook.com/hendricmarmata
   website: https://hendricsimarmata.com
   
-
-markdown:  kramdown
 permalink: pretty
 paginate:  11
+
+markdown:  kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 plugins:
         - jekyll-sitemap
