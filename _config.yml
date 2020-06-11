@@ -8,11 +8,6 @@ baseurl: 'https://hendricsimarmata.com'
 google_analytics: 'UA-53681345-4'
 permalink: /:title/
 
-
-# SEO
-# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
-logo: /favicon.png
-
 #Authors
 authors:
   hendric:
