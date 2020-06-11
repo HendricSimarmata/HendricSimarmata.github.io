@@ -1,5 +1,29 @@
-name: Hendric Simarmata
-markdown: kramdown
+#-- Site
+title: Hendric Simarmata
+url: "https://hendricsimarmata.com"
+
+# SEO
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /favicon.png
+description: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
+author: Hendric Simarmata
+  name: Hendric Simarmata
+  email: contact@hendricsimarmata.com
+  twitter: HendricMarmata
+social:HendricSimarmata
+
+permalink: pretty
 
 plugins:
         - jekyll-sitemap
+        - jekyll-archives
+        - jekyll-sitemap
+        - jekyll-seo-tag
+        - jekyll-feed
+        - jekyll-paginate
+
+exclude:
+        - Gemfile
+        - Gemfile.lock
+        - README.md
+        - LICENCE
