@@ -2,8 +2,6 @@
 layout: page
 title: Projects
 ---
-
-<div class="pagepiling">
       <div data-anchor="page1" class="pp-scrollable text-white section section-1">
         <div class="scroll-wrap">
           <div class="section-bg" style="background-image:url(assets/images/bg/project1.jpg);"></div>
@@ -177,4 +175,3 @@ title: Projects
         </div>
       </div>
 		-->
-    </div>
