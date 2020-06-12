@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-<body>
+<body {% if page.url == '/' %} is-home {% endif %}'>
 
   {% include anim.html %}
   {% include sidebar/side.html %}
