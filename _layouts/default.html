@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+<body {% if page.url == '/' %} is-home {% endif %}'>
+
+  {% include anim.html %}
+  {% include sidebar/side.html %}
+  {% include header.html %}
+
+<div class="copy-bottom white boxed">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>.</div>
+  {% include social.html %}
+
+  <div class="pagepiling">
+    {{ content }}
+  </div>
+
+  {% include scripts.html %}
+  
+</body>
+
+</html>
