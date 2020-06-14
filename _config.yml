@@ -9,8 +9,8 @@ baseurl: '/'
 google_analytics: 'UA-53681345-4'
 permalink: /:title/
 
-#Authors
-authors:
+#Author
+author:
   hendric:
   name: Hendric Simarmata
   display_name: Hendric Simarmata
