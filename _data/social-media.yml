@@ -1,0 +1,35 @@
+email:
+  id: 'contact@hendricsimarmata.com'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square'
+
+facebook:
+  id: 'HendricSimarmata'
+  href: 'https://www.facebook.com/'
+  title: 'Facebook'
+  fa-icon: 'fab fa-facebook-f'
+
+twitter:
+  id: 'HendricMarmata'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fab fa-twitter'
+
+dribbble:
+  id: 'HendricSimarmata'
+  href: 'https://www.dribbble.com/'
+  title: 'Dribbble'
+  fa-icon: 'fab fa-dribbble'
+
+behance:
+  id: 'HendricSimarmata'
+  href: 'https://www.behance.net/'
+  title: 'Behance'
+  fa-icon: 'fab fa-behance'
+
+linkedin:
+  id: 'HendricSimarmata'
+  href: 'https://www.linkedin.com/in/'
+  title: 'Linkedin'
+  fa-icon: 'fab fa-linkedin-in'

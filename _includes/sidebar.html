@@ -26,11 +26,12 @@
       </ul>
       <div class="menu-footer right-boxed">
         <div class="social-list">
-          <a href="{{ author.twitter }}" target="_blank" class="icon fa-xs fab fa-twitter"></a>
-          <a href="{{ author.facebook }}" target="_blank" class="icon fab fa-facebook-f"></a>
-          <a href="{{ author.behance }}" target="_blank" class="icon fab fa-behance"></a>
-          <a href="{{ author.linkedin }}" target="_blank" class="icon fab fa-linkedin-in"></a>
-          <a href="{{ author.dribbble }}" target="_blank" class="icon fab fa-dribbble"></a>
+		
+          		<a href="{{ site.data.social-media.twitter.href }}{{ site.data.social-media.twitter.id }}" target="_blank" class="icon fa-xs fab fa-twitter"></a>
+			    <a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
+				<a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
+				<a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
+				<a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
         </div>
         <div class="copy">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>. All Rights Reserved</div>
       </div>
