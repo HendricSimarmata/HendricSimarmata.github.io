@@ -58,9 +58,17 @@ plugins:
 #  MPulse:                   # Add if you want to track performance with mPulse
 #    apikey: XXXXX-YYYYY-ZZZZZ-AAAAA-23456   # Required - replace with your mPulse API key
 
-
+# default excludes
 exclude:
-        - Gemfile
-        - Gemfile.lock
-        - README.md
-        - LICENCE
+    - .sass-cache/
+    - .jekyll-cache/
+    - gemfiles/
+    - Gemfile
+    - Gemfile.lock
+    - node_modules/
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/
+    - LICENCE
+    - README.md
