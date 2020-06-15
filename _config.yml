@@ -37,7 +37,6 @@ kramdown:
 
 plugins:
         - jekyll-sitemap
-        - jekyll-archives
         - jekyll-sitemap
         - jekyll-seo-tag
         - jekyll-feed
