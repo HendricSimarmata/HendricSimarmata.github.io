@@ -1,10 +1,54 @@
 ---
-layout: default
 title: 404
-permalink: /404
 ---
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
 
-<div class="text-center">
-<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Page does not exist!</h1>
-<p>This Page does not exist or under construction. Please back to my <a href="{{site.baseurl}}/">homepage</a>!</p>
-</div>
+  {% include head.html %}
+  
+  <body>
+     <div class="animsition">  
+        {% include loader.html %}
+        <div class="click-capture"></div>
+      	{% include sidebar.html %}
+      	{% include header.html %}
+      	
+      
+      	<div class="copy-bottom white boxed">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>.</div>
+             <div class="social-list social-list-bottom boxed">
+        		<a href="https://behance.net/HendricSimarmata" target="_blank" class="icon fab fa-behance"></a>
+          		<a href="https://facebook.com/HendricSimarmata" target="_blank" class="icon fab fa-facebook-f"></a>
+          		<a href="https://linkedin.com/in/HendricSimarmata" target="_blank" class="icon ion-social-linkedin"></a>
+          		<a href="https://dribbble.com/HendricSimarmata" target="_blank" class="icon fab fa-dribbble"></a>
+            </div>
+        
+        <div class="pagepiling">
+            <div class="text-center">
+				<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Page does not exist!</h1>
+				<p>This Page does not exist or under construction. Please back to my <a href="{{site.baseurl}}/">homepage</a>!</p>
+			</div>
+        </div>
+     </div>
+
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/jquery-3.5.1.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/jquery-migrate-3.3.0.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/popper.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/wow.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/smoothscroll.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/animsition.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.validate.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/owl.carousel.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.pagepiling.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/fontawesome/fontawesome.js" data-auto-replace-svg="nest"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/lightbox.js"></script>
+        
+        <!-- Scripts -->
+        <script src="{{ base.url | prepend: site.url }}/assets/js/scripts.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/formoid.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/bootstrap.js"></script>
+        {% include lazyload.html %}
+  </body>
+</html>
+
