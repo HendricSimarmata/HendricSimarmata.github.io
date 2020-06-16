@@ -1,7 +1,12 @@
 
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }} | {{site.name}}</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="google-site-verification" content="IC3j7IwOIqOGVQTuXPEeoLflvlcxv2eMxvHEsxoz-Wk" />
-	
+<meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+
+<link rel="stylesheet" href={{ "/assets/css/style.css" | relative_url }}>
+
 <!-- Favicons -->
 <link rel="shortcut icon" href="assets/apple-touch-icon-128x128.png" sizes="32x32">
 <link rel="shortcut icon" href="assets/apple-touch-icon-128x128.png" sizes="192x192">
@@ -12,18 +17,15 @@
 <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
+{% feed_meta %}
+{% seo title=false %}
+	{% if jekyll.environment == 'production' and site.google_analytics %}
+      {% include analytics.html %}
+      {% endif %}
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
 	
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PFGT7C3');</script>
-<!-- End Google Tag Manager -->
-	
-<script src="https://www.googleoptimize.com/optimize.js?id=GTM-P365WGK"></script>
 
 <!-- OPEN GRAPH -->
 <meta property="og:locale" content="en_US">
@@ -39,7 +41,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- /OPEN GRAPH -->
 
 <!-- CONICAL -->
-<link rel="canonical" href="{{ page.url | prepend: site.url }}">
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+<!--<link rel="canonical" href="{{ page.url | prepend: site.url }}"> -->
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image"/>
@@ -49,3 +52,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:creator" content="@hendricmarmata">
 <meta name="twitter:card" content="summary">
 <!-- /Twitter -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFGT7C3');</script>
+<!-- End Google Tag Manager -->
+	
+<script src="https://www.googleoptimize.com/optimize.js?id=GTM-P365WGK"></script>
+<meta name="google-site-verification" content="IC3j7IwOIqOGVQTuXPEeoLflvlcxv2eMxvHEsxoz-Wk" />
+
+</head>
