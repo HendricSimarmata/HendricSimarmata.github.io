@@ -7,12 +7,16 @@ favicon: 'assets/favicon.png'
 url: 'https://hendricsimarmata.com/'
 baseurl: '/'
 google_analytics: 'UA-53681345-4'
-permalink: /:title/
+twitter: https://twitter.com/hendricmarmata
+facebook: https://facebook.com/hendricmarmata
+instagram: https://instagram.com/hendricsimarmata
+
 
 #Author
 author:
   hendric:
   name: Hendric Simarmata
+  bio: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
   display_name: Hendric Simarmata
   gravatar: https://s.gravatar.com/avatar/fa4c2f1d934d41ccc9cb848535e377ce
   email: contact@hendricsimarmata.com
@@ -24,6 +28,7 @@ author:
   linkedin: https://linkedin.com/hendricsimarmata
   
 markdown:  kramdown
+permalink: /:title/
 
 kramdown:
   input: GFM
