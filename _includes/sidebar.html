@@ -1,5 +1,6 @@
 <div class="menu"> 
       <span class="close-menu icon-cross2 right-boxed"></span>
+      <!--
       <ul class="menu-list right-boxed">
         <li  data-menuanchor="page1">
           <a  href="{{ site.url }}#page1">Home</a>
@@ -23,16 +24,30 @@
         <li  data-menuanchor="page7">
           <a href="{{ site.url }}#page7">Contact</a>
         </li>
+      </ul>-->
+
+
+
+      <ul class="menu-list right-boxed">
+        {% for item in site.data.navigation %}
+          <li  data-menuanchor="page1">
+              <a href="{{ item.link }}" {% if page.url == item.link %}style="color: white;"{% endif %}>
+                  {{ item.name }}
+               </a>
+          </li>
+        {% endfor %}
       </ul>
+
+
+
       <div class="menu-footer right-boxed">
         <div class="social-list">
-		
-          		<a href="{{ site.data.social-media.twitter.href }}{{ site.data.social-media.twitter.id }}" target="_blank" class="icon fa-xs fab fa-twitter"></a>
-			    <a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
-				<a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
-				<a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
-				<a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
+            <a href="{{ site.data.social-media.twitter.href }}{{ site.data.social-media.twitter.id }}" target="_blank" class="icon fa-xs fab fa-twitter"></a>
+            <a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
+            <a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
+            <a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
+            <a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
         </div>
-        <div class="copy">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>. All Rights Reserved</div>
+        <div class="copy">&copy; <a href="{{ site.url }}" class="text-white project-depan"> Hendric Simarmata</a> <script>document.write(new Date().getFullYear());</script>. All Rights Reserved</div>
       </div>
     </div>
