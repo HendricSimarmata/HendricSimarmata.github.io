@@ -5,7 +5,8 @@ description: Graphic Designer specializing in illustration, ui/ux, icon, &amp; I
 logo: 'assets/favicon.png'
 favicon: 'assets/favicon.png'
 url: 'https://hendricsimarmata.com/'
-baseurl: '/'
+#baseurl: '/'
+#google_analytics: UA-53681345-4
 google_analytics: 'UA-53681345-4'
 twitter: https://twitter.com/hendricmarmata
 facebook: https://facebook.com/hendricmarmata
@@ -43,14 +44,14 @@ plugins:
         - jekyll-seo-tag
         - jekyll-feed
         - jekyll-paginate
-#        - jekyll-analytics
+        - jekyll-analytics
         - jekyll-email-protect
 
 
-#jekyll_analytics:
-#  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-#    id: UA-53681345-4          # Required - replace with your tracking id
-#    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-53681345-4          # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
 
 #  Matomo:                   # Add, if you want to track with Matomo (former Piwik Analytics)
 #    url: matomo.example.com # Required - url to Matomo installation without trailing /

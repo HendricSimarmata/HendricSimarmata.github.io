@@ -21,6 +21,7 @@ end
 #gem 'jekyll-manager', group: :jekyll_plugins
 
 gem 'jekyll-email-protect'
+gem 'jekyll-analytics'
 #gem 'jekyll-analytics'
   
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
