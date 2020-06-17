@@ -33,3 +33,9 @@ linkedin:
   href: 'https://www.linkedin.com/in/'
   title: 'Linkedin'
   fa-icon: 'fab fa-linkedin-in'
+  
+instagram:
+  id: 'Hendric.Simarmata'
+  href: 'https://instagram.com/'
+  title: 'instagram'
+  fa-icon: 'fab fa-instagram'

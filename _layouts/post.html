@@ -7,13 +7,13 @@ layout: page
         <div class="row row-project">
           <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
             <h1>{{ page.title }}</h1>
-            <p>{{ page.date | date_to_string }}</p>
+            <p>{{ page.category }} - {{ page.date | date_to_string }}</p>
             <div class="social-list social-list-detail">
-              <a href="" class="icon ion-social-twitter"></a>
-              <a href="" class="icon ion-social-facebook"></a>
-              <a href="" class="icon ion-social-googleplus"></a>
-              <a href="" class="icon ion-social-linkedin"></a>
-              <a href="" class="icon ion-social-dribbble-outline"></a>
+              	<a href="{{ site.data.social-media.instagram.href }}{{ site.data.social-media.instagram.id }}" target="_blank" class="icon fa-xs fab fa-instagram"></a>
+				<a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
+				<a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
+				<a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
+				<a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
             </div>
           </div>
           <div class="col-project-info col-md-6">
@@ -46,4 +46,3 @@ layout: page
       		{{ content }}
       	</div>
       </div>
-</div>
