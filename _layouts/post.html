@@ -7,7 +7,7 @@ layout: page
         <div class="row row-project">
           <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
             <h1>{{ page.title }}</h1>
-            <p>{{ page.category }} - {{ page.date | date_to_string }}</p>
+            <p>{{ page.category }} - <i class="far fa-calendar-alt"></i> {{ page.date | date_to_string }}</p>
             <div class="social-list social-list-detail">
               	<a href="{{ site.data.social-media.instagram.href }}{{ site.data.social-media.instagram.id }}" target="_blank" class="icon fa-xs fab fa-instagram"></a>
 				<a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
@@ -19,21 +19,21 @@ layout: page
           <div class="col-project-info col-md-6">
             <div class="row">
               <div class="col-md-6 mt-5">
-                <h5>Client</h5>
+                <h5><i class="far fa-user"></i> Client</h5>
                 <p>California Art Gallery Museum</p>
               </div>
               <div class="col-md-6 mt-5">
-                <h5>Team</h5>
+                <h5><i class="far fa-users"></i> Team</h5>
                 <p>Dustin Mahone - iOS Developer<br>
                    Paul tf - Designer
                 </p>
               </div>
               <div class="col-md-6 mt-5">
-                <h5>Services</h5>
-                <p>Branding, UI/UX Design,<br>Mobile Design</p>
+                <h5><i class="far fa-cogs"></i> Services</h5>
+                <p>{{ page.category }}</p>
               </div>
               <div class="col-md-6 mt-5">
-                <h5>Date</h5>
+                <h5><i class="far fa-calendar-alt"></i> Date</h5>
                 <p>Feburary 25th, 2019</p>
               </div>
             </div>
