@@ -1,33 +1,6 @@
 <div class="menu"> 
       <span class="close-menu icon-cross2 right-boxed"></span>
-      <!--
-      <ul class="menu-list right-boxed">
-        <li  data-menuanchor="page1">
-          <a  href="{{ site.url }}#page1">Home</a>
-        </li>
-        <li  data-menuanchor="page2">
-          <a href="{{ site.url }}#page2">Specialization</a>
-        </li>
-        <li  data-menuanchor="page3">
-          <a href="{{ site.url }}#page3">Resume</a>
-        </li>
-        <li  data-menuanchor="page4">
-          <a href="{{ site.url }}#page4">About</a>
-        </li>
-        <li  data-menuanchor="page5">
-          <a href="{{ site.url }}#page5">Projects</a>
-        </li>
-        <li  data-menuanchor="page6">
-          <a href="{{ site.url }}#page6">Gallery</a>
-        </li>
-		
-        <li  data-menuanchor="page7">
-          <a href="{{ site.url }}#page7">Contact</a>
-        </li>
-      </ul>-->
 
-
-      
       <ul class="menu-list right-boxed">
         {% for item in site.data.navigation %}
           <li  data-menuanchor="page1">
@@ -37,12 +10,7 @@
           </li>
         {% endfor %}
       </ul>
-
-      <!--
-      <ul class="menu-list right-boxed">
-
-      </ul>-->
-
+	
       <div class="menu-footer right-boxed">
         <div class="social-list">
             <a href="{{ site.data.social-media.twitter.href }}{{ site.data.social-media.twitter.id }}" target="_blank" class="icon fa-xs fab fa-twitter"></a>
