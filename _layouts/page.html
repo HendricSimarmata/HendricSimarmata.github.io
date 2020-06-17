@@ -1,63 +1,51 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }} | {{site.name}}</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    {% include head.html %}
-    {% feed_meta %}
-    {% seo %}
+---
+title: Projects
+---
 
-    <link rel="stylesheet" href={{ "/assets/css/style.css" | relative_url }}>
-  </head>
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
+
+  {% include head.html %}
+  
   <body>
      <div class="animsition">  
         {% include loader.html %}
         <div class="click-capture"></div>
-
-      	{% include sidebar.html %}
-      	
-      	{% include header.html %}
-
-      	<div class="copy-bottom white boxed">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>.</div>
+        {% include sidebar.html %}
+        {% include header.html %}
+        
+      
+        <div class="copy-bottom white boxed">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>.</div>
              <div class="social-list social-list-bottom boxed">
-        		<a href="https://behance.net/HendricSimarmata" target="_blank" class="icon fab fa-behance"></a>
-          		<a href="https://facebook.com/HendricSimarmata" target="_blank" class="icon fab fa-facebook-f"></a>
-          		<a href="https://linkedin.com/in/HendricSimarmata" target="_blank" class="icon ion-social-linkedin"></a>
-          		<a href="https://dribbble.com/HendricSimarmata" target="_blank" class="icon fab fa-dribbble"></a>
+            <a href="https://behance.net/HendricSimarmata" target="_blank" class="icon fab fa-behance"></a>
+              <a href="https://facebook.com/HendricSimarmata" target="_blank" class="icon fab fa-facebook-f"></a>
+              <a href="https://linkedin.com/in/HendricSimarmata" target="_blank" class="icon ion-social-linkedin"></a>
+              <a href="https://dribbble.com/HendricSimarmata" target="_blank" class="icon fab fa-dribbble"></a>
             </div>
-
-        <div class="scroll-wrap">
-          <div class="scrollable-content">
-            <div class="vertical-title text-white d-none d-lg-block"><span>my gallery</span></div>
-            <div class="vertical-centred">
-              <div class="boxed boxed-inner">
-                <div class="boxed mt-5">
-                	{{ content }}
-                  <div class="container">
-
-                    <div class="intro">
-
-                       <!--<h2 class="title text-white"><span class="text-primary">My</span> Gallery</h2>-->
-                      <div class="row row-partners text-white">
-                        <div class="text-white col-sm-6 col-md-4 col-xl-3 col-partner">
-                          
-                        </div>
-                       </div>
-          <div class="row row-partners p-4 mt-5">
-            <div class="col text-center">
-              <i class="text-muted">Visit my Behance for more Gallery</i><br>
-              <a type="button" role="button" href="https://behance.net/HendricSimarmata" target="_blank" class="btn behance btn-outline-light rounded py-3 px-5 text-center align-content-center"><i class="fab fa-behance "></i></a>
-            </div>
-          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        
+        <div class="pagepiling">
+          {{ content }}
         </div>
-     </div>
-     {% include scripts.html %}
-   </body>
+          </div>
+
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/jquery-3.5.1.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/jquery-migrate-3.3.0.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/popper.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/wow.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/smoothscroll.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/animsition.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.validate.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/owl.carousel.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.pagepiling.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/fontawesome/fontawesome.js" data-auto-replace-svg="nest"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/lightbox.js"></script>
+        
+        <!-- Scripts -->
+        <script src="{{ base.url | prepend: site.url }}/assets/js/scripts.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/formoid.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/bootstrap.js"></script>
+        {% include lazyload.html %}
+  </body>
 </html>

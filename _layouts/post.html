@@ -1,14 +1,49 @@
 ---
-layout: default
+layout: page
 ---
-<h1>{{ page.title }}</h1>
 
-<p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
-</p>
+<div class="content">
+	      <div class="container">
+        <div class="row row-project">
+          <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.date | date_to_string }}</p>
+            <div class="social-list social-list-detail">
+              <a href="" class="icon ion-social-twitter"></a>
+              <a href="" class="icon ion-social-facebook"></a>
+              <a href="" class="icon ion-social-googleplus"></a>
+              <a href="" class="icon ion-social-linkedin"></a>
+              <a href="" class="icon ion-social-dribbble-outline"></a>
+            </div>
+          </div>
+          <div class="col-project-info col-md-6">
+            <div class="row">
+              <div class="col-md-6 mt-5">
+                <h5>Client</h5>
+                <p>California Art Gallery Museum</p>
+              </div>
+              <div class="col-md-6 mt-5">
+                <h5>Team</h5>
+                <p>Dustin Mahone - iOS Developer<br>
+                   Paul tf - Designer
+                </p>
+              </div>
+              <div class="col-md-6 mt-5">
+                <h5>Services</h5>
+                <p>Branding, UI/UX Design,<br>Mobile Design</p>
+              </div>
+              <div class="col-md-6 mt-5">
+                <h5>Date</h5>
+                <p>Feburary 25th, 2019</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-{{ content }}
+      <img alt="" class="image-holder wow fadeIn" src="/assets/images/bg/project3.jpg">\
+      	<div class="container">
+      		{{ content }}
+      	</div>
+      </div>
+</div>
