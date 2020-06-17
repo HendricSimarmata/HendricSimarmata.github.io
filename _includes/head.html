@@ -1,7 +1,13 @@
 
 <head>
 <meta charset="utf-8">
-<title>{{ page.title }} | {{site.name}}</title>
+<title>
+   {%if page.title %}
+       {{ page.title }}
+   {% else %}
+       {{ site.title }}
+   {% endif %}
+</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 
@@ -23,11 +29,10 @@
      	{% include analytics.html %}
 		{% endif %}
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap|Poppins:300,400,400i&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i&display=swap" rel="stylesheet"> -->
 <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml">
 	
-
 <!-- OPEN GRAPH -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">

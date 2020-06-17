@@ -12,6 +12,8 @@ twitter: https://twitter.com/hendricmarmata
 facebook: https://facebook.com/hendricmarmata
 instagram: https://instagram.com/hendricsimarmata
 
+sass:
+    style: compressed
 
 #Author
 author:
