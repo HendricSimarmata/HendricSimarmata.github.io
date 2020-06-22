@@ -3,13 +3,27 @@
 
       <ul class="menu-list right-boxed">
         {% for item in site.data.navigation %}
-          <li  data-menuanchor="page1">
-              <a href="{{ item.link }}" {% if page.url == item.link %}style="color: white;"{% endif %}>
+          <li  data-menuanchor="{{ item.link }}">
+              <a href="#{{ item.link }}" {% if page.url == item.link %}style="color: white;"{% endif %}>
                   {{ item.name }}
                </a>
           </li>
         {% endfor %}
       </ul>
+
+      <!--
+      <nav class="vlt-offcanvas-menu__navigation">
+        {% for item in site.data.navigation %}
+        <ul class="sf-menu menu-list right-boxed">
+          <li data-menuanchor="{{ item.name }}">
+            <a href="{{ item.link }}" {% if page.url == item.link %}style="color: white;"{% endif %}>
+                  {{ item.name }}
+               </a>
+          </li>
+        </ul>
+        {% endfor %}
+      </nav>
+      -->
 	
       <div class="menu-footer right-boxed">
 		  
