@@ -1425,6 +1425,11 @@ a.brand:focus{
   color: #fff;
 }
 
+.experience-plus{
+  font-size:10rem;
+  vertical-align: super;
+}
+
 .experience-info{
   position:relative;
   font-size: 1.25rem;
