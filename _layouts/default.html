@@ -24,7 +24,7 @@ title: Hendric Simarmata
             <a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
             </div>
         
-        <div class="pagepiling">
+        <div class="pagepiling vlt-main vlt-fullpage-slider" data-loop-top="" data-loop-bottom="" data-speed="800">
             <div data-anchor="page1" class="pp-scrollable text-white section section-1">
                 {% include page1.html %}
             </div>
@@ -36,7 +36,7 @@ title: Hendric Simarmata
                 {% include page3.html %}
             </div>
         	-->
-            <div data-anchor="page4" class="pp-scrollable section section-4">
+            <div data-anchor="page4" class="pp-scrollable section section-4" data-anchor="Services" data-brightness="light">
                 {% include page4.html %}
             </div>
             <div data-anchor="page5" class="pp-scrollable text-white section section-5">
@@ -68,10 +68,10 @@ title: Hendric Simarmata
         <script src="{{ base.url | prepend: site.url }}/assets/js/scripts.js"></script>
         <script src="{{ base.url | prepend: site.url }}/assets/js/formoid.min.js"></script>
         <script src="{{ base.url | prepend: site.url }}/assets/js/bootstrap.js"></script>
-        <!--
-        <script src="{{ base.url | prepend: site.url }}/assets/js/vlt-plugins.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/vlt-controllers.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/vlt-helpers.js"></script>-->
+
+        <script src="{{ base.url | prepend: site.url }}/assets/js/vlt-plugins.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/vlt-controllers.min.js"></script>
+        <script src="{{ base.url | prepend: site.url }}/assets/js/vlt-helpers.js"></script>
         {% include lazyload.html %}
   </body>
 </html>
