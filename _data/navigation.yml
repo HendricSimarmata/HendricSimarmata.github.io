@@ -4,17 +4,17 @@
 - name: Specialization
   link: /#page2
 
-- name: Resume
-  link: /#page3
+#- name: Resume
+#  link: /#page3
 
 - name: About
-  link: /#page4
+  link: /#page3
 
 - name: Projects
-  link: /#page5
+  link: /#page4
 
 - name: Gallery
-  link: /#page6
+  link: /#page5
 
 - name: Contact
-  link: /#page7
+  link: /#page6
