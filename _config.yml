@@ -1,19 +1,57 @@
-#-- Site
-name: Hendric Simarmata
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
 title: Hendric Simarmata
-description: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
-logo: 'assets/favicon.png'
-favicon: 'assets/favicon.png'
-url: 'https://hendricsimarmata.com/'
-#baseurl: '/'
-#google_analytics: UA-53681345-4
-google_analytics: 'UA-53681345-4'
-twitter: https://twitter.com/hendricmarmata
-facebook: https://facebook.com/hendricmarmata
-instagram: https://instagram.com/hendricsimarmata
+name: Hendric Simarmata
+email: contact@hendricsimarmata.com
+mobile: +62 812 3431 1725
+credit: '&copy; Hendric Simarmata. 2020.'
+address: Prabumulih, Indonesia
+description: >- # this means to ignore newlines until "baseurl:"
+  Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+#languages: ["sv", "en", "de", "fr"]
+
+#SEO
+logo: 'assets/favicon.svg'
 
 twitter: 
   username: hendricmarmata
+  creator: hendricmarmata
+  card: summary_large_image
+
+#facebook:
+#  app_id:
+#  publisher:
+#  admins:
+
+social:
+  name: Hendric Simarmata
+  links:
+    - https://facebook.com/HendricSimarmata
+    - https://dribbble.com/HendricSimarmata
+    - https://twitter.com/HendricMarmata
+    - https://behance.net/HendricSimarmata
+    - https://linkedin.com/in/HendricSimarmata
 
 webmaster_verifications:
   google: UA-53681345-4
@@ -25,15 +63,25 @@ webmaster_verifications:
 sass:
     style: compressed
 
+css:
+  style: compressed
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
 #Author
 author:
   hendric:
-  name: Hendric Simarmata
+#  name: Hendric Simarmata
   bio: Graphic Designer specializing in illustration, ui/ux, icon, &amp; Illustrator based in Prabumulih, Indonesia.
   display_name: Hendric Simarmata
   gravatar: https://s.gravatar.com/avatar/fa4c2f1d934d41ccc9cb848535e377ce
   email: contact@hendricsimarmata.com
-  twitter: https://twitter.com/hendricmarmata
+#  twitter: https://twitter.com/hendricmarmata
   facebook: https://facebook.com/hendricmarmata
   website: https://hendricsimarmata.com
   behance: https://behance.net/hendricsimarmata
@@ -41,7 +89,7 @@ author:
   linkedin: https://linkedin.com/hendricsimarmata
   
 markdown:  kramdown
-permalink: /:title/
+permalink: /:title
 
 kramdown:
   input: GFM
@@ -50,43 +98,53 @@ kramdown:
     block:
       line_numbers: true
 
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
+# Build settings
+#theme: minima
 plugins:
-        - jekyll-sitemap
         - jekyll-sitemap
         - jekyll-seo-tag
         - jekyll-feed
         - jekyll-paginate
-        - jekyll-analytics
-        - jekyll-email-protect
+#        - jekyll-multiple-languages-plugin
+#        - jekyll-analytics
+#        - jekyll-email-protect
 
-
-jekyll_analytics:
-  GoogleAnalytics:          # Add, if you want to track with Google Analytics
-    id: UA-53681345-4          # Required - replace with your tracking id
-    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
-
-#  Matomo:                   # Add, if you want to track with Matomo (former Piwik Analytics)
-#    url: matomo.example.com # Required - url to Matomo installation without trailing /
-#    siteId: "1234"          # Required - replace with your Matomo site id (Write id as string)
-
-#  Piwik:                    # Add, if you want to track with Piwik
-#    url: piwik.example.com  # Required - url to Piwik installation without trailing /
-#    siteId: "1234"          # Required - replace with your Piwik site id (Write id as string)
-
-#  MPulse:                   # Add if you want to track performance with mPulse
-#    apikey: XXXXX-YYYYY-ZZZZZ-AAAAA-23456   # Required - replace with your mPulse API key
-
-# default excludes
-exclude:
-    - .sass-cache/
-    - .jekyll-cache/
-    - gemfiles/
-    - Gemfile
-    - Gemfile.lock
-    - node_modules/
-    - vendor/bundle/
-    - vendor/cache/
-    - vendor/gems/
-    - vendor/ruby/
-    - LICENCE
-    - README.md
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

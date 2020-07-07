@@ -1,48 +1,92 @@
----
-layout: page
----
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-<div class="content">
-	      <div class="container">
+{% include head.html %}
+
+<body class="project-detail">
+   <div>
+   <!-- Loader -->
+   <div class="loader">
+    <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+   </div>
+  
+    <!-- Click capture -->
+   <div class="click-capture"></div>
+
+
+    {% include header.html %}
+    {% include footer.html %}
+
+    <!-- Copyright -->
+    <div class="copy d-none d-sm-block">{{ site.credit }}</div>
+    </nav>
+
+    <!-- Navbar Mobile -->  
+    {% include sidebar.html %}
+    
+
+    <section class="navbar-is-white text-white m-0 pp-scrollable d-flex section position-absolute pp-easing" style="background-image:url('img/bg/masthead.jpg');" role="main">
+    <div class="content pt-5 w-100">
+      <div class="container m-5 w-100 p-5">
         <div class="row row-project">
-          <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.category }} - <i class="far fa-calendar-alt"></i> {{ page.date | date_to_string }}</p>
-            <div class="social-list social-list-detail">
-              	<a href="{{ site.data.social-media.instagram.href }}{{ site.data.social-media.instagram.id }}" target="_blank" class="icon fa-xs fab fa-instagram"></a>
-				<a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
-				<a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
-				<a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
-				<a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
+          <div class="col-project-name col-md-6 mt-5 mb-5 mb-md-0">
+            <h2>{{ page.title }}</h2>
+            <p>{{ page.category }} - </p>
+            <div class="social-list social-list-detail mt-4">
+                <a href="{{ site.data.social-media.instagram.href }}{{ site.data.social-media.instagram.id }}" target="_blank" class="icon fa-xs fab fa-instagram"></a>
+                <a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
+                <a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
+                <a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
+                <a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
             </div>
           </div>
           <div class="col-project-info col-md-6">
             <div class="row">
               <div class="col-md-6 mt-5">
-                <h5><i class="far fa-user"></i> Client</h5>
-                <p>California Art Gallery Museum</p>
+                <h5>Client</h5>
+                <p>{{ page.client }}</p>
               </div>
               <div class="col-md-6 mt-5">
-                <h5><i class="far fa-users"></i> Team</h5>
-                <p>Dustin Mahone - iOS Developer<br>
-                   Paul tf - Designer
+                <h5>Team</h5>
+                <p>{{ page.team }}
                 </p>
               </div>
               <div class="col-md-6 mt-5">
-                <h5><i class="far fa-cogs"></i> Services</h5>
-                <p>{{ page.category }}</p>
+                <h5>Services</h5>
+                <p>{{ page.services }}</p>
               </div>
               <div class="col-md-6 mt-5">
-                <h5><i class="far fa-calendar-alt"></i> Date</h5>
-                <p>Feburary 25th, 2019</p>
+                <h5>Date</h5>
+                <p><i class="far fa-calendar-alt"></i>{{ page.date | date_to_string }}</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <img alt="" class="image-holder wow fadeIn" src="/assets/images/bg/project3.jpg">\
-      	<div class="container">
-      		{{ content }}
-      	</div>
+      <img alt="" class="image-holder w-100" src="/assets/img/projects/project3.jpg">
+      <div class="container">
+        {{ content }}
+       </div>
       </div>
+      
+</section>
+</div>
+
+  <!-- Optional JavaScript -->
+  <script src="{{ '/assets/js/jquery-1.12.4.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/popper.min.js' | prepend: site.baseurl}}" ></script>
+  <script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="{{ '/assets/js/jquery.validate.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/jquery.magnific-popup.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/jquery.pagepiling.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/owl.carousel.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/interface.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-plugins.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-helpers.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-controllers.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/ramsay/animsition.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/ramsay/wow.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/ramsay/smoothscroll.js' | prepend: site.baseurl}}"></script>
+</body>
+</html>

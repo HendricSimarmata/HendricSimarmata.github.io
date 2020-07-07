@@ -1,0 +1,43 @@
+---
+layout: page
+title: Projects
+---
+<section id="projects" class="navbar-is-white text-white section pp-scrollable position-absolute">
+	{% for post in site.posts %}
+      	<div class="project-wrap">
+      	 <div class="bg-changer">
+		    <div class="section-bg active" style="background-image:url(/assets/img/bg/portfolio/bg1.jpg);"></div>
+		    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg2.jpg);"></div>
+		    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg3.jpg);"></div>
+		    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg4.jpg);"></div>
+		    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg5.jpg);"></div>
+		    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg6.jpg);"></div>
+		  </div>
+	        <div class="intro">
+	          <div class="scroll-wrap">
+		        <div class="container">
+		        	<div class="d-block d-md-flex align-items-center justify-content-between border-bottom pb-3">
+			          <h2 class="text-white mb-0 mb-3 mb-md-0">Latest projects</h2>
+
+			          <a href="#" class="text-white btn">View all</a>
+			        </div>
+			        
+		          <div class="mt-5 pt-2">
+		              <div class="row-project-box row">
+						<div class="col-project-box col-md-6 col-lg-4 col-xl-3">
+						  <a href="{{ post.url }}" class="project-box">
+						     <div class="project-box-inner">
+						        <h4>{{ post.title }}</h4>
+						        <div class="project-category">{{ post.category }}</div>
+						     </div>
+						  </a>
+						</div>
+					   </div>
+		          </div>
+		          
+		        </div>
+	          </div>
+	        </div>
+	     </div>
+	     {% endfor %}
+      </section>

@@ -1,0 +1,66 @@
+---
+Title: Projects
+---
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{% include head.html %}
+<body>
+
+   <!-- Loader -->
+   <div class="loader">
+    <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+   </div>
+  
+    <!-- Click capture -->
+   <div class="click-capture"></div>
+    {% include header.html %}
+    {% include footer.html %}
+
+	  <!-- Copyright -->
+	  <div class="copy d-none d-sm-block">{{ site.credit }}</div>
+    </nav>
+
+    <!-- Navbar Mobile -->  
+    {% include sidebar.html %}
+    <div id="pagepiling">
+    	<section id="projects" class="navbar-is-white text-white section pp-scrollable position-absolute" style="background-image:url('/assets/img/bg/experience.jpg');">
+    		<div class="project-wrap">
+    			<div class="bg-changer">
+				    <div class="section-bg active" style="background-image:url(/assets/img/bg/portfolio/bg1.jpg);"></div>
+				    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg2.jpg);"></div>
+				    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg3.jpg);"></div>
+				    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg4.jpg);"></div>
+				    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg5.jpg);"></div>
+				    <div class="section-bg" style="background-image:url(/assets/img/bg/portfolio/bg6.jpg);"></div>
+		  		</div>
+		  		<div class="intro">
+		  			<div class="scroll-wrap">
+		  				<div class="container">
+		  					<h2 class="text-white mb-0">Latest projects</h2>
+		  					<div class="mt-5 pt-2">
+		  						<div class="row-project-box row">
+		  							{{ content }}
+		  						</div>
+		  					</div>
+		  				</div>
+		  			</div>
+		  		</div>
+    		</div>
+    	</section>
+  	</div>
+
+  <!-- Optional JavaScript -->
+  <script src="{{ '/assets/js/jquery-1.12.4.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/popper.min.js' | prepend: site.baseurl}}" ></script>
+  <script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="{{ '/assets/js/jquery.validate.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/jquery.magnific-popup.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/jquery.pagepiling.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/owl.carousel.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/interface.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-plugins.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-helpers.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-controllers.min.js' | prepend: site.baseurl}}"></script>
+</body>
+</html>

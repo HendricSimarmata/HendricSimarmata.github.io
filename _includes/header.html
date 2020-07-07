@@ -1,16 +1,20 @@
-    <header class="navbar navbar-fullpage boxed">
-      <div class="navbar-bg"></div>
-      <a class="brand" href="index.html#page1">
-        <img src="/assets/images/brand.png" alt="Hendric Simarmata Logo">
-        <div class="brand-info">
-          <div class="brand-name">{{ site.name }}</div>
-        </div>
-      </a>
+    <!-- Navbar -->  
+    <nav  class="navbar navbar-desctop mastnav">
+      <div class="position-relative w-100">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+	    <!-- Brand-->
+	    <a class="navbar-brand brand-title border p-1" href="{{ site.url }}">
+	    	<!--<img class="mr-3" src="/assets/favicon.svg" height="50" width="50" alt="{{ site.title }}" title="{{ site.name }}">-->Hendric Simarmata</a>
+		<div class="container d-block">
+	      <span class="phone  my-0 d-none d-md-block">{{ site.mobile }}</span>
+	        <span class="email  my-0 d-none d-md-block">{{ site.email }}</span>
+		</div>
 
-    </header>
+	    <!-- Toggler -->
+	    <button class="toggler">
+	      <span class="toggler-icon"></span>
+	      <span class="toggler-icon"></span>
+	      <span class="toggler-icon"></span>
+	    </button>
+	  </div>
+	</nav>

@@ -30,8 +30,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
-    jekyll-analytics (0.1.14)
-    jekyll-email-protect (1.1.0)
     jekyll-feed (0.14.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-paginate (1.1.0)
@@ -43,7 +41,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    jekyll_picture_tag (1.10.0)
+    jekyll_picture_tag (1.10.2)
       addressable (~> 2.6)
       base32 (~> 0.3)
       jekyll (< 5)
@@ -77,8 +75,9 @@ GEM
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    tzinfo (2.0.2)
-      concurrent-ruby (~> 1.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.7)
+      thread_safe (~> 0.1)
     tzinfo-data (1.2020.1)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
@@ -88,20 +87,15 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bundler
-  jekyll
-  jekyll-analytics
-  jekyll-email-protect
-  jekyll-feed
+  jekyll (~> 4.1.1)
+  jekyll-feed (~> 0.12)
   jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
   jekyll_picture_tag
-  kramdown
-  rouge
-  sassc
+  tzinfo (~> 1.2)
   tzinfo-data
-  wdm (~> 0.1.0)
+  wdm (~> 0.1.1)
 
 BUNDLED WITH
    2.1.4

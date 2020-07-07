@@ -1,20 +1,26 @@
-- name: Home
-  link: page1
+#- name: home
+#  link: home
 
-- name: Specialization
-  link: page2
+- name: about
+  link: about
 
-#- name: Resume
-#  link: /#page3
+- name: experience
+  link: experience
 
-- name: About
-  link: page3
+- name: skills
+  link: skills
 
-- name: Projects
-  link: page4
+- name: projects
+  link: projects
 
-- name: Gallery
-  link: page5
+#- name: partners
+#  link: partners
 
-- name: Contact
-  link: page6
+#- name: testimonials
+#  link: testimonials
+
+#- name: news
+#  link: news
+
+- name: contact
+  link: contact

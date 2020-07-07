@@ -1,75 +1,84 @@
----
-title: Hendric Simarmata
----
-
 <!doctype html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
-  {% include head.html %}
+{% include head.html %}
+
+<body class='{% if page.url == '/' %} is-home {% endif %}'>
+   
+   <!-- Loader -->
+   <div class="loader">
+    <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+   </div>
   
-  <body>
-     <div class="animsition">  
-        {% include loader.html %}
-        <div class="click-capture"></div>
-      	{% include sidebar.html %}
-      	{% include header.html %}
-      	
+    <!-- Click capture -->
+   <div class="click-capture"></div>
+
+
+    {% include header.html %}
+    {% include footer.html %}
+
+	  <!-- Copyright -->
+	  <div class="copy d-none d-sm-block">{{ site.credit }}</div>
+    </nav>
+
+    <!-- Navbar Mobile -->  
+    {% include sidebar.html %}
+    
+
+    <div id="pagepiling">
+
+      <!-- Masthead -->
+      {% include masthead.html %}  
+
+
+      <!-- About -->
+      {% include about.html %}  
       
-      	<div class="copy-bottom white boxed">&copy; Hendric Simarmata <script>document.write(new Date().getFullYear());</script>.</div>
-             <div class="social-list social-list-bottom boxed">
-        		<a href="{{ site.data.social-media.twitter.href }}{{ site.data.social-media.twitter.id }}" target="_blank" class="icon fa-xs fab fa-twitter"></a>
-            <a href="{{ site.data.social-media.facebook.href }}{{ site.data.social-media.facebook.id }}" target="_blank" class="icon fab fa-facebook-f"></a>
-            <a href="{{ site.data.social-media.behance.href }}{{ site.data.social-media.behance.id }}" target="_blank" class="icon fab fa-behance"></a>
-            <a href="{{ site.data.social-media.linkedin.href }}{{ site.data.social-media.linkedin.id }}" target="_blank" class="icon fab fa-linkedin-in"></a>
-            <a href="{{ site.data.social-media.dribbble.href }}{{ site.data.social-media.dribbble.id }}" target="_blank" class="icon fab fa-dribbble"></a>
-            </div>
-        
-        <div class="pagepiling vlt-main vlt-fullpage-slider" data-loop-top="" data-loop-bottom="" data-speed="800">
-            <div data-anchor="page1" class="pp-scrollable text-white section section-1">
-                {% include page1.html %}
-            </div>
-            <div data-anchor="page2" class="pp-scrollable section section-2">
-                {% include page2.html %}
-            </div>
-            <!--
-            <div data-anchor="page3" class="pp-scrollable text-white section section-3">
-                {% include page3.html %}
-            </div>
-        	-->
-            <div data-anchor="page4" class="pp-scrollable section section-4" data-anchor="Services" data-brightness="light">
-                {% include page4.html %}
-            </div>
-            <div data-anchor="page5" class="pp-scrollable text-white section section-5">
-                {% include page5.html %}
-            </div>
-            <div data-anchor="page6" class="pp-scrollable section section-6">
-                {% include page6.html %}
-            </div>
-            <div data-anchor="page8" class="pp-scrollable section section-8">
-                {% include page7.html %}
-            </div>
-        </div>
-        	</div>
+ 
+      <!-- Experience -->  
+      {% include experience.html %}
 
-        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/jquery-3.5.1.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/jquery-migrate-3.3.0.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery/popper.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/wow.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/smoothscroll.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/animsition.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.validate.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/owl.carousel.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/jquery.pagepiling.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/fontawesome/fontawesome.js" data-auto-replace-svg="nest"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/lightbox.js"></script>
-        
-        <!-- Scripts -->
-        <script src="{{ base.url | prepend: site.url }}/assets/js/scripts.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/formoid.min.js"></script>
-        <script src="{{ base.url | prepend: site.url }}/assets/js/bootstrap.js"></script>
+      <!-- Skills -->  
+      {% include skills.html %}
 
-        <script src="{{ base.url | prepend: site.url }}/assets/js/animtxt.js"></script>
-        {% include lazyload.html %}
-  </body>
+      <!-- Projects -->  
+      {% include projects.html %}
+
+      <!-- Partners -->  
+      <!--{% include partners.html %}-->
+
+      <!-- Testimonials -->  
+      <!--{% include testimonials.html %}-->
+
+      <!-- News-->  
+      <!--{% include news.html %}-->
+
+      <!-- Contact -->  
+      {% include contact.html %}
+      
+  </div>
+
+  <!-- Scrollbar -->
+   <div class="progress-nav">
+    <ul class="navbar-nav">
+      {% for item in site.data.navigation %}
+        <li data-menuanchor="{{ item.link }}" {% if page.url == item.link %} class="active nav-link"{% endif %}></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="{{ '/assets/js/jquery-1.12.4.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/popper.min.js' | prepend: site.baseurl}}" ></script>
+  <script src="{{ '/assets/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <script src="{{ '/assets/js/jquery.validate.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/jquery.magnific-popup.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/jquery.pagepiling.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/owl.carousel.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/interface.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-plugins.min.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-helpers.js' | prepend: site.baseurl}}"></script>
+  <script src="{{ '/assets/js/vlt/vlt-controllers.min.js' | prepend: site.baseurl}}"></script>
+</body>
 </html>

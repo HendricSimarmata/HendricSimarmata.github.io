@@ -1,31 +1,15 @@
 ---
-layout: page
+layout: project
 title: Projects
 ---
-      <div data-anchor="page1" class="pp-scrollable text-white section">
-      	<h1>Latest Posts</h1>
-      	{% for post in site.posts %}
-        <div class="scroll-wrap">
-          <div class="section-bg" style="background-image:url(/assets/images/bg/project1.jpg);"></div>
-          <div class="scrollable-content">
-            <div class="vertical-centred v2">
-              <div class="boxed boxed-inner">
-                <div class="boxed">
-                  <div class="container">
-                    <div class="intro">
-                      <div class="project-detail-row">
-                        <a class="" href="{{ post.url }}">
-                          <span class="project-number">{{ post.number }}</span>
-                          <h2 class="project-title">{{ post.title }}</h2>
-                          <div class="project-category">{{ post.category }} - {{ post.date | date_to_string }}</div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
+
+<div class="col-project-box col-md-6 col-lg-4 col-xl-3">
+	{% for post in site.posts %}
+		<a href="{{ post.url }}" class="project-box">
+			<div class="project-box-inner">
+				<h4>Judul</h4>
+				<div class="project-category">{{ post.category }}</div>
+			</div>
+		</a>
+	{% endfor %}
+</div>
