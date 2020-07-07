@@ -39,3 +39,9 @@ instagram:
   href: 'https://instagram.com/'
   title: 'instagram'
   fa-icon: 'fab fa-instagram'
+
+mobile:
+  id: '+6281234311725'
+  href: 'tel:'
+  title: '+62 812 3431 1725'
+  fa-icon: 'fa fa-cell'
