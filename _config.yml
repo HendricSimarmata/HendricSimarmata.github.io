@@ -38,6 +38,7 @@ twitter:
   username: hendricmarmata
   creator: hendricmarmata
   card: summary_large_image
+  site: https://twitter.com/hendricmarmata
 
 #facebook:
 #  app_id:
@@ -91,12 +92,17 @@ author:
 markdown:  kramdown
 permalink: /:title
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+markdown: CommonMark
+commonmark:
+   options: ["SMART", "FOOTNOTES"]
+   extensions: ["strikethrough", "autolink", "table"]
+
+#kramdown:
+#  input: GFM
+#  syntax_highlighter: rouge
+#  syntax_highlighter_opts:
+#    block:
+#      line_numbers: true
 
 include:
   - _pages
@@ -118,16 +124,40 @@ defaults:
       layout: "default"
 
 
+#ReadMe Index
+readme_index:
+  enabled:          true
+  remove_originals: false
+  with_frontmatter: false
+
 # Build settings
 #theme: minima
 plugins:
-        - jekyll-sitemap
-        - jekyll-seo-tag
+        - jekyll-commonmark
         - jekyll-feed
+        - jekyll-include-cache
+        - jekyll-seo-tag
+        - jekyll-sitemap
         - jekyll-paginate
-#        - jekyll-multiple-languages-plugin
-#        - jekyll-analytics
-#        - jekyll-email-protect
+        - jekyll-analytics
+        - jekyll-email-protect
+        - jekyll-readme-index
+
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-53681345-4          # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
+#  Matomo:                   # Add, if you want to track with Matomo (former Piwik Analytics)
+#    url: matomo.example.com # Required - url to Matomo installation without trailing /
+#    siteId: "1234"          # Required - replace with your Matomo site id (Write id as string)
+
+#  Piwik:                    # Add, if you want to track with Piwik
+#    url: piwik.example.com  # Required - url to Piwik installation without trailing /
+#    siteId: "1234"          # Required - replace with your Piwik site id (Write id as string)
+
+#  MPulse:                   # Add if you want to track performance with mPulse
+#    apikey: XXXXX-YYYYY-ZZZZZ-AAAAA-23456   # Required - replace with your mPulse API key
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -137,6 +167,19 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENCE
+  - README.md
+#  - any_additional_item # any user-specific listing goes at the end
+
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

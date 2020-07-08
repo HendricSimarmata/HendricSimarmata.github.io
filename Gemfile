@@ -8,6 +8,9 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.1.1"
+gem "liquid-c"
+
+#gem "jekyll", github: "jekyll/jekyll"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 #gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -17,9 +20,14 @@ gem "jekyll", "~> 4.1.1"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem 'jekyll-sitemap'
+  gem "jekyll-include-cache"
   gem 'jekyll-seo-tag'
   gem 'jekyll-paginate'
   gem 'jekyll_picture_tag'
+  gem 'jekyll-email-protect'
+  gem 'jekyll-analytics'
+  gem "jekyll-commonmark"
+  gem "jekyll-readme-index"
 #  gem 'jekyll-multiple-languages-plugin'
 end
 

@@ -14,8 +14,8 @@
    <div class="click-capture"></div>
 
 
-    {% include header.html %}
-    {% include footer.html %}
+    {% include_cached header.html %}
+    {% include_cached footer.html %}
 
 	  <!-- Copyright -->
 	  <div class="copy d-none d-sm-block">{{ site.credit }}</div>
@@ -59,6 +59,14 @@
   </div>
 
   <!-- Scrollbar -->
+  <div class="progress-nav">
+    <ul class="navbar-nav">
+      {% for item in site.data.navigation %}
+        <li data-menuanchor="{{ item.link }}" {% if page.url == item.link %} class="active nav-link"{% endif %}></li>
+      {% endfor %}
+    </ul>
+  </div>
+  
    <div class="progress-nav">
     <ul class="navbar-nav">
       {% for item in site.data.navigation %}
