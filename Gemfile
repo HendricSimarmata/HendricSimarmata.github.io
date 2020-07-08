@@ -19,16 +19,17 @@ gem "liquid-c"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem 'jekyll-sitemap'
+  gem "jekyll-sitemap"
   gem "jekyll-include-cache"
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-paginate'
-  gem 'jekyll_picture_tag'
-  gem 'jekyll-email-protect'
-  gem 'jekyll-analytics'
+  gem "jekyll-seo-tag"
+  gem "jekyll-paginate"
+  gem "jekyll_picture_tag"
+  gem "jekyll-email-protect"
+  gem "jekyll-analytics"
   gem "jekyll-commonmark"
   gem "jekyll-readme-index"
-#  gem 'jekyll-multiple-languages-plugin'
+  gem "jekyll-loading-lazy"
+#  gem "jekyll-multiple-languages-plugin"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

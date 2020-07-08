@@ -145,6 +145,7 @@ plugins:
         - jekyll-analytics
         - jekyll-email-protect
         - jekyll-readme-index
+        - jekyll-loading-lazy
 
 jekyll_analytics:
   GoogleAnalytics:          # Add, if you want to track with Google Analytics

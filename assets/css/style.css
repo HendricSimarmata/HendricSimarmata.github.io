@@ -361,7 +361,7 @@ label.error{
 /* 1.5 Icons */
 
 
-.solist, ion-icon{
+.solist, i{
   color:#23a592;
   font-size: 3.8rem;
   --ionicon-stroke-width: 17px;
@@ -659,19 +659,19 @@ label.error{
   margin-right: 1.5rem;
 }
 
-.social-icons ion-icon{
+.social-icons i{
   display: block;
   font-size:1.2rem;
   color:#000;
   transition: all 0.3s ease;
 }
 
-.social-icons ion-icon:hover{
+.social-icons i:hover{
   color: #2980B9;
 }
 
 .navbar-bottom-white,
-.navbar-bottom-white .social-icons ion-icon{
+.navbar-bottom-white .social-icons i{
   color: #fff;
 }
 
@@ -943,11 +943,11 @@ label.error{
     color: #23a592;
 }
 
-.navbar-white:not(.fixed) .social-icons ion-icon{
+.navbar-white:not(.fixed) .social-icons i{
   color: #fff;
 }
 
-.navbar-white:not(.fixed) .social-icons ion-icon:hover{
+.navbar-white:not(.fixed) .social-icons i:hover{
   color: #23a592;
 }
 
