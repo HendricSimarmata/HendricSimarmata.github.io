@@ -1477,12 +1477,6 @@ h1 + .line{
   font-size: 4rem;
 }
 
-.mastnav{
-  background: #000;
-  opacity: 0.49;
-}
-
-
 .project-detail{
   letter-spacing: 0.025em;
       line-height: 1.9428;
