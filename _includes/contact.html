@@ -1,4 +1,4 @@
-<section id="contact" class="navbar-is-white text-white section pp-scrollable position-absolute" style="background-image:url('/assets/img/bg/contact.jpg');">
+<section id="contact" class="navbar-is-white text-white section pp-scrollable position-absolute" id="form1-3" style="background-image:url('/assets/img/bg/contact.jpg');">
 		<!--<div class="vlt-section__ken-burn-background"><img src="/assets/img/bg/contact.jpg" alt=""></div>-->
         <div class="intro">
           <div class="scroll-wrap">
@@ -23,30 +23,34 @@
 				 		<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
 				 			<h3 class="text-white mt-0">Let's grab a coffee and jump on conversation <span class="text-primary">chat with me.</span></h3>
 
-							 	<div class="mt-5" id="form4-2">
-							 		<div data-form-type="formoid">
-										<form class="js-ajax-form"  action="https://mobirise.com/" method="POST" data-form-title="Mobirise Form">
-											<input type="hidden" name="email" data-form-email="true" value="eNhd6Yxu2Z5FF3ngDa0rKXFZd7QgI+zF4QZH4+zcMaSTGWNDlv8RiqSorRaej8skSZuY2o+OCu4hw6Nv8aIdpQk+ymMZcHFlzmpujtv7HR9Kkrg849qYtkTPpCYrW//r">
+							 	<div class="mt-5">
+							 		<div class="contact-info" data-form-type="formoid">
+										<form class="js-ajax-form" action="https://mobirise.com/" method="POST" data-form-title="Mobirise Form">
+											<input type="hidden" name="email" data-form-email="true" value="DLx523A+q/ePg8dgcNjQq/VRR5U3snbl1bzQIX7hwkTlXRvdu8xNUHLCvx1Lm9qYlIozBDx3d3ofiW1UDQGofNR9+MxCaTLj9+MMCFVy0MKbp7S5r+m5Nwfaw1ney8d4">
 											<div class="row">
 												<div class="form-group col-sm-6" data-for="name">
-													<input type="text" name="name" class="form-control" placeholder="Name*" data-form-field="Name" required="required" id="name-form4-2">
+													<input class="form-control" placeholder="Name*" type="text" name="name" data-form-field="Name" required="required" id="name-form1-3">
 												</div>
 									            <div class="form-group col-sm-6" data-for="email">
-									            	<input type="text" name="email" class="form-control" placeholder="Email*" data-form-field="Email" required="required" id="email-form4-2">
+									            	<input class="form-control" placeholder="Email*" type="email" name="email" data-form-field="Email" required="required" id="email-form1-3">
 									        	</div>
 								        	</div>
-								             <div class="form-group col-sm-12" data-for="subject">
-								               <input type="text" name="Subject"  class="form-control" placeholder="Subject (Optinal)" data-form-field="Subject" id="subject-form4-2">
+								        	<div class="row">
+									             <div class="form-group col-sm-12" data-for="subject">
+									               <input class="form-control" placeholder="Subject (Optinal)" type="tel" name="phone" data-form-field="Phone" id="phone-form1-3">
+									             </div>
 								             </div>
-								             <div class="form-group col-sm-12" data-for="message">
-								              <textarea rows="3" name="message"  class="form-control" placeholder="Message*" data-form-field="Message" id="message-form4-2" required="required"></textarea>
+								             <div class="row">
+									             <div class="form-group col-sm-12" data-for="message">
+									              <textarea class="form-control" placeholder="Message*" name="message" data-form-field="Message" id="message-form1-3"></textarea>
+									             </div>
 								             </div>
 								             	<div class="row">
-									                  <div hidden="hidden"  data-form-alert="" class="ml-3 mt-0 alert alert-success">Thank You, your message is successfully sent!</div>
-									                  <div hidden="hidden" data-form-alert-danger="" class="ml-3 text-primary">Sorry, something went wrong</div>
+									                <div class="message alert alert-success col-12" id="success-message" hidden="hidden" data-form-alert="">Your message is successfully sent...</div>
+				             						<div class="message alert alert-danger col-12" id="error-message" hidden="hidden" data-form-alert-danger="">Sorry something went wrong</div>
                 								</div>
 								             <div class="form-group mb-0 col-sm-12">
-								               <button type="submit" class="rounded btn text-white" title="Submit">Contact me</button>
+								               <button class="rounded btn text-white" title="Submit" type="submit" >Contact me</button>
 								             </div>
 										</form>
 									</div>
