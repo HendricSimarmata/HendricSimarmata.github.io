@@ -92,17 +92,12 @@ author:
 markdown:  kramdown
 permalink: /:title
 
-markdown: CommonMark
-commonmark:
-   options: ["SMART", "FOOTNOTES"]
-   extensions: ["strikethrough", "autolink", "table"]
-
-#kramdown:
-#  input: GFM
-#  syntax_highlighter: rouge
-#  syntax_highlighter_opts:
-#    block:
-#      line_numbers: true
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 include:
   - _pages
@@ -136,7 +131,6 @@ readme_index:
 # Build settings
 #theme: minima
 plugins:
-        - jekyll-commonmark
         - jekyll-feed
         - jekyll-include-cache
         - jekyll-seo-tag

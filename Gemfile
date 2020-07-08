@@ -26,7 +26,6 @@ group :jekyll_plugins do
   gem "jekyll_picture_tag"
   gem "jekyll-email-protect"
   gem "jekyll-analytics"
-  gem "jekyll-commonmark"
   gem "jekyll-readme-index"
   gem "jekyll-loading-lazy"
 #  gem "jekyll-multiple-languages-plugin"
