@@ -489,7 +489,7 @@ label.error{
 }
 
 .bg-primary{
-  background:#23a592!important;
+  background:#2980B9!important;
   color:#fff;
 }
 
@@ -538,13 +538,13 @@ label.error{
   padding: 0 1.5rem;
   border-bottom: 1px solid rgba(52,52,52,0.1);
   height:4.7rem;
+  background-color: #fff;
 }
 
 
 @media(min-width: 992px){
   .navbar{
     padding: 0 3rem;
-    /*background: #2980B9;*/
   }
 }
 
@@ -553,6 +553,7 @@ label.error{
 .navbar a:hover,
 .navbar a:focus{
   color:#343434;
+    
 }
 
 .toggler{
@@ -593,6 +594,7 @@ label.error{
 .navbar-brand:hover,
 .navbar-brand:focus{
   color:#fff;
+
 }
 
 @media (max-width: 1500px){
@@ -623,7 +625,7 @@ label.error{
   left: 0;
   width: 100%;
   bottom:0;
-  padding:0 1.5rem 3rem 1.5rem;
+  padding:0 1.5rem 1rem 1.5rem;
 }
 
 @media (min-width: 992px){
@@ -914,6 +916,7 @@ label.error{
 
 .navbar-white{
   border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: #1B1B1B!important;
 }
 
 .navbar-white:not(.fixed) .phone,
@@ -1474,32 +1477,11 @@ h1 + .line{
   font-size: 4rem;
 }
 
-/*
 .mastnav{
-  background: grey;
-}*/
-
-.navbar-bg{
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -1px;
-  width: 100%;
-  height: 0;
-  background: #272727;
-  z-index: -1;
-  box-shadow: none;
-  -webkit-transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
-  -o-transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
-  transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
+  background: #000;
+  opacity: 0.49;
 }
 
-.navbar-fixed .navbar-bg{
-  height: 100%;
-  
-  box-shadow: 0 0 35px rgba(0,0,0,0.2);
-}
 
 .project-detail{
   letter-spacing: 0.025em;

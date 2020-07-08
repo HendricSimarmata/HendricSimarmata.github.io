@@ -116,6 +116,7 @@
 	});
 
     /* Send form */
+    /*
 	if ($('.js-ajax-form').length) {
 		$('.js-ajax-form').each(function(){
 			$(this).validate({
@@ -136,6 +137,6 @@
 			    }
 			});
 		});
-	}
+	} */
 
 })(jQuery);
