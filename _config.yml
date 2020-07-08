@@ -123,6 +123,9 @@ defaults:
     values:
       layout: "default"
 
+#JekyllBuild
+incremental: true
+
 
 #ReadMe Index
 readme_index:
