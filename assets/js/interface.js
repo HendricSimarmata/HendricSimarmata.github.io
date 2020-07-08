@@ -61,6 +61,62 @@
     }
 
 
+    /*-------------------------------------------------------------------------------
+      Full screen sections 
+    -------------------------------------------------------------------------------*/
+
+
+    function navbarFullpage(){
+     if ( $('.pp-section.active').scrollTop() > 0 ){
+        $('.navbar-fullpage').addClass('navbar-fixed');
+      }
+      else{
+        $('.navbar-fullpage').removeClass('navbar-fixed');
+     }
+    }
+
+    navbarFullpage();
+
+    function navbar(){
+    $(window).scroll(function(){
+        if ( $(window).scrollTop() > 0 ){
+            $('.navbar').addClass('navbar-fixed');
+          }
+          else{
+            $('.navbar').removeClass('navbar-fixed');
+         }
+    });
+     
+    }
+
+    navbar();
+
+    if ($('.pagepiling').length > 0){
+        $('.pagepiling').pagepiling({
+            scrollingSpeed: 280,
+            loopBottom:true,
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+            afterLoad: function(anchorLink, index){
+               navbarFullpage();
+                
+            }
+        });
+
+     }
+
+     $('.pp-scrollable').on('scroll', function () {
+        var scrollTop =$(this).scrollTop();
+        if (scrollTop > 0 ) {
+            $('.navbar-fullpage').addClass('navbar-fixed');
+        }
+        else{
+            $('.navbar-fullpage').removeClass('navbar-fixed');
+        }
+    });
+
+
+
+
     /* Navbar toggler */
     $('.toggler').on('click',function(){
     	$('body').addClass('menu-is-open');

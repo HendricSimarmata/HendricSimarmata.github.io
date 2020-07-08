@@ -1,11 +1,16 @@
     <!-- Navbar -->  
-    <nav  class="navbar navbar-desctop">
+    <nav  class="navbar navbar-desctop navbar-fullpage boxed">
+    	<div class="navbar-bg"></div>
       <div class="position-relative w-100">
 
 	    <!-- Brand-->
-	    <a class="navbar-brand brand-title border p-1" href="{{ site.url }}">
-	    	<!--<img class="mr-3" src="/assets/favicon.svg" height="50" width="50" alt="{{ site.title }}" title="{{ site.name }}">-->Hendric Simarmata</a>
-		<div class="container d-block">
+	    <a class="brand navbar-brand p-1" href="{{ site.url }}">
+	    	<img class="mr-3" src="/assets/favicon.svg" height="50" width="50" alt="{{ site.title }}" title="{{ site.name }}">
+	    	<div class="brand-info nav-title brand-title">
+	    		<div class="brand-name">Hendric Simarmata</div>
+	    	</div>
+	    	</a>
+		<div class="contact container d-block">
 	      <span class="phone  my-0 d-none d-md-block">{{ site.mobile }}</span>
 	        <span class="email  my-0 d-none d-md-block">{{ site.email }}</span>
 		</div>
