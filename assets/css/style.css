@@ -605,6 +605,7 @@ label.error{
   }
   .navbar .container{
     width: auto;
+    margin-top: 0.4rem;
   } 
 }
 
@@ -1534,17 +1535,6 @@ h1 + .line{
     padding: 2.7rem 0;
 }*/
 
-@media (min-width: 768px)
-.boxed {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-.boxed {
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
-}
-
 .navbar-fixed {
     position: fixed;
     color: #fff!important;
@@ -1593,6 +1583,7 @@ h1 + .line{
     display: inline-block;
     vertical-align: middle;
     margin-right: 0.65rem;
+    height: 3rem;
 }
 
 .brand {
@@ -1605,6 +1596,11 @@ h1 + .line{
   color: #fff;
 }
 
+.navbar-fixed .toggler-icon{
+  border-color: #fff;
+
+}
+
 .contact{
-  margin-top: 0.7rem;
+  /*margin-top: 0.5rem;*/
 }
