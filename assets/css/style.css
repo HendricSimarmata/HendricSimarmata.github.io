@@ -1277,6 +1277,7 @@ h1 + .line{
 .progress-bar{
   position: relative;
   background-color: transparent;
+  
 }
 
 .progress-bar:before{
@@ -1285,6 +1286,7 @@ h1 + .line{
   content:'';
   width:0;
   height: 100%;
+  
 }
 
 .active .progress-bar:before{
