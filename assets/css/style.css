@@ -1565,7 +1565,6 @@ h1 + .line{
     -webkit-transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
     -o-transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
     transition: all 0.3s cubic-bezier(0.37, 0.31, 0.2, 0.85);
-    
   }
 
   .brand-info{
@@ -1606,10 +1605,47 @@ h1 + .line{
   /*margin-top: 0.5rem;*/
 }
 
+/*------------------------------------------
+EXPERIENCE
+------------------------------------------*/
+
 .experience-number small{
 	font-size: 33.33%;
     vertical-align: super;
 	color:#dc3545;
 	position: relative;
 	font-weight: 200;
+}
+
+.icon{
+	font-size: 2rem;
+}
+
+/*------------------------------------------
+SPECIALIZATION
+------------------------------------------*/
+
+.col-specialization {
+    margin: 0 1rem;
+	padding-top: 3px;
+	
+}
+
+.col-specialization .icon{
+	color: #2980B9;
+	font-weight: 300px;
+	font-size: 5rem;
+}
+
+.col-specialization h5{
+	padding: 0px;
+	margin-bottom: 0px;
+}
+
+.special-line{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+    width: 10%;
+    border-top: 3px solid #2980B9;
+    transition: all .3s ease;
 }
