@@ -1649,3 +1649,29 @@ SPECIALIZATION
     border-top: 3px solid #2980B9;
     transition: all .3s ease;
 }
+
+.vertical-title{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 20%;
+	left: 1rem;
+	font-weight: 600;
+}
+
+.vertical-title span{
+	position: absolute;
+	transform: translate(-50%, -50%) rotate(-90deg);
+	top: 50%;
+	left: 10%;
+	font-size: 8rem;
+    transition: all 0.5s 0.6s;
+	letter-spacing: 0;
+    opacity: 0.1;
+	white-space: nowrap;
+}
+
+.vertical-title .h2{
+	font-size: 5rem;
+	left: 5%;
+}
