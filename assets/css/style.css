@@ -1125,6 +1125,7 @@ h1 + .line{
   line-height: 1;
   font-family: 'Karla', sans-serif;
   color:#2980B9;
+  font-weight: 700;
 }
 
 .experience-text{
@@ -1603,4 +1604,12 @@ h1 + .line{
 
 .contact{
   /*margin-top: 0.5rem;*/
+}
+
+.experience-number small{
+	font-size: 33.33%;
+    vertical-align: super;
+	color:#dc3545;
+	position: relative;
+	font-weight: 200;
 }
