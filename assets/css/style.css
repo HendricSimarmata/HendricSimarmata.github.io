@@ -1243,12 +1243,12 @@ h1 + .line{
 
 .photo-icon-2{
   left:-40px;
-  bottom:100px;
+  bottom:140px;
 }
 
 .photo-icon-3{
   right:-50px;
-  bottom:50px;
+  bottom:-20px;
 }
 
 .active .photo-icon-1{
@@ -1258,7 +1258,7 @@ h1 + .line{
 
 .active .photo-icon-2{
   opacity: 1;
-  bottom:180px;
+  bottom:140px;
   transition-delay: .7s;
   width: 4rem
 }
