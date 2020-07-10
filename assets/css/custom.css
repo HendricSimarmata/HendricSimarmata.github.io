@@ -72,34 +72,38 @@
   }
 }
 
-.pie-progress{
-  position: relative;
-  background-color: transparent;
-  
+.cid-s4mB5eaTgE {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-s4mB5eaTgE h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-s4mB5eaTgE .wrap {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.cid-s4mB5eaTgE .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-s4mB5eaTgE .card {
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  word-wrap: break-word;
+}
+.cid-s4mB5eaTgE ellipse {
+  stroke: rgba(206, 206, 206, 0.4);
+}
+.cid-s4mB5eaTgE path {
+  stroke: #149dcc;
 }
 
-.pie-progress:before{
-  position: absolute;
-  background:#2980B9;
-  content:'';
-  width:0;
-  height: 100%;
-  
-}
 
-.active .pie-progress:before{
-  width: 100%;
-  transition:all 0.8s  ease;
-}
-
-.prie-progress:nth-child(1) .progress-bar:before{
-  transition-delay: 400ms;
-}
-
-.prie-progress:nth-child(2) .progress-bar:before{
-  transition-delay: 600ms;
-}
-
-.prie-progress:nth-child(3) .progress-bar:before{
-  transition-delay: 800ms;
+.mbr-crt-title{
+	font-size: 0.8rem;
+    line-height: 1rem;
+    color: #000;
 }
