@@ -1258,14 +1258,16 @@ h1 + .line{
 
 .active .photo-icon-2{
   opacity: 1;
-  bottom:150px;
-  transition-delay: .7s
+  bottom:180px;
+  transition-delay: .7s;
+  width: 4rem
 }
 
 .active .photo-icon-3{
   opacity: 1;
-  bottom:-50px;
-  transition-delay: 1s
+  bottom:-20px;
+  transition-delay: 1s;
+  left: 75%;
 }
 
 .progress{
@@ -1676,4 +1678,8 @@ SPECIALIZATION
 .vertical-title .h2{
 	font-size: 5rem;
 	left: 5%;
+}
+
+.icon-part{
+	box-shadow: 0 0 black!important;
 }
