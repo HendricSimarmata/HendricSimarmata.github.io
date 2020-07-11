@@ -46,7 +46,12 @@
 
 
 
-@import url('bootstrap.css');
+@import url('bootstrap.min.css');
+@import url('bootstrap-grid.min.css');
+@import url('bootstrap-reboot.min.css');
+@import url('owl.carousel.css');
+@import url('animate.css');
+@import url('animsition.css');
 @import url('magnific-popup.css');
 @import url('owl.carousel.min.css');
 @import url('fontawesome/all.css');
