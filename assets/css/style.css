@@ -1618,7 +1618,7 @@ EXPERIENCE
 
 .experience-number small{
 	font-size: 33.33%;
-    vertical-align: super;
+    vertical-align: top;
 	color:#dc3545;
 	position: relative;
 	font-weight: 200;
