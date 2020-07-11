@@ -1260,7 +1260,6 @@ h1 + .line{
   opacity: 1;
   bottom:140px;
   transition-delay: .7s;
-  width: 4rem
 }
 
 .active .photo-icon-3{
