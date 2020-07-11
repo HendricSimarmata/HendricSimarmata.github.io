@@ -21,18 +21,13 @@
         }
     });
 
-
-
-    
-
     /* Full page scroll*/
     if ($('#pagepiling').length > 0){
 
         $('#pagepiling').pagepiling({
             scrollingSpeed: 280,
-            navigation:true,
+            navigation:false,
             menu: '.navbar-nav',
-			position: 'right',
             anchors: ['home', 'about', 'experience', 'skills', 'projects', 'contact'],
             afterRender: function(anchorLink, index){ 
               NavbarColor();
@@ -89,21 +84,6 @@
     });
      
     }
-
-    navbar();
-
-    if ($('.pagepiling').length > 0){
-        $('.pagepiling').pagepiling({
-            scrollingSpeed: 280,
-            loopBottom:true,
-            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
-            afterLoad: function(anchorLink, index){
-               navbarFullpage();
-                
-            }
-        });
-
-     }
 
      $('.pp-scrollable').on('scroll', function () {
         var scrollTop =$(this).scrollTop();
