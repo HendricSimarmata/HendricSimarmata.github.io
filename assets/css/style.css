@@ -1686,3 +1686,11 @@ SPECIALIZATION
 .icon-part{
 	box-shadow: 0 0 black!important;
 }
+
+.contact-ic{
+	font-size: 1.75rem;
+}
+
+.contact-ic-mail{
+	font-size: 1.125rem;
+}

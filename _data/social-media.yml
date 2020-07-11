@@ -2,7 +2,7 @@ email:
   id: 'contact@hendricsimarmata.com'
   href: 'mailto:'
   title: 'Email'
-  fa-icon: 'far fa-envelope-square'
+  fa-icon: 'far fa-envelope'
 
 facebook:
   id: 'HendricSimarmata'
@@ -40,8 +40,8 @@ instagram:
   title: 'instagram'
   fa-icon: 'fab fa-instagram'
 
-mobile:
-  id: '+6281234311725'
-  href: 'tel:'
-  title: '+62 812 3431 1725'
-  fa-icon: 'far fa-phone'
+skype:
+  id: 'HendricSimarmata'
+  href: 'skype:'
+  title: 'HendricSimarmata'
+  fa-icon: 'fab fa-skype'
