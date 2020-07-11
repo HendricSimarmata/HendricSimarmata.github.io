@@ -1258,7 +1258,7 @@ h1 + .line{
 
 .active .photo-icon-2{
   opacity: 1;
-  bottom:140px;
+  bottom:10%;
   transition-delay: .7s;
 }
 

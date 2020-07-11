@@ -30,8 +30,9 @@
 
         $('#pagepiling').pagepiling({
             scrollingSpeed: 280,
-            navigation:false,
+            navigation:true,
             menu: '.navbar-nav',
+			position: 'right',
             anchors: ['home', 'about', 'experience', 'skills', 'projects', 'contact'],
             afterRender: function(anchorLink, index){ 
               NavbarColor();
