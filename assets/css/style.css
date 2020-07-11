@@ -1266,7 +1266,6 @@ h1 + .line{
   opacity: 1;
   bottom:-20px;
   transition-delay: 1s;
-  left: 75%;
 }
 
 .progress{
