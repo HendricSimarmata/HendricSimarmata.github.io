@@ -5,3 +5,14 @@
 layout: default
 title: Hendric Simarmata
 ---
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Meta Tag</title>
+      <meta http-equiv = "refresh" content = "2; url = https://hendricsimarmata.com" />
+   </head>
+   <body>
+      <p>Hello HTML5!</p>
+   </body>
+</html>
