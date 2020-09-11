@@ -5,7 +5,7 @@
 
 <body class='{% if page.url == '/' %} is-home {% endif %}'>
    
-   <!-- Loader -->
+    Loader 
    <div class="loader">
     <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
    </div>
@@ -14,17 +14,16 @@
    <div class="click-capture"></div>
 
 
-    {% include_cached header.html %}
-    {% include_cached footer.html %}
+    <!--{% include_cached header.html %}
+    {% include_cached footer.html %}-->
 
 	  <!-- Copyright -->
-	  <div class="copy d-none d-sm-block">{{ site.credit }}</div>
+	 <!-- <div class="copy d-none d-sm-block">{{ site.credit }}</div>
     </nav>
 
     <!-- Navbar Mobile -->  
-    {% include sidebar.html %}
-    <div id="pagepiling">
-	    <center>You will be automatically redirected to new site: <a href="http://hendricsimarmata.com">Hendric Simarmata</a> as this resource is not available.</center>
+    <!--{% include sidebar.html %}-->
+    <!--<div id="pagepiling">-->
       <!-- Masthead -->
       <!--{% include masthead.html %}-->
       <!-- About -->
@@ -43,25 +42,27 @@
       <!--{% include news.html %}-->
       <!-- Contact -->  
       <!--{% include contact.html %}-->
-      
-  </div>
+  <!--</div>-->
+	<div>
+		<center><h1>You will be automatically redirected to new site: <a href="http://hendricsimarmata.com">Hendric Simarmata</a> as this resource is not available.</h1></center>
+	</div>
 
-  <!-- Scrollbar -->
+  <!-- Scrollbar 
   <div class="progress-nav">
     <ul class="navbar-nav">
       {% for item in site.data.navigation %}
         <li data-menuanchor="{{ item.link }}" {% if page.url == item.link %} class="active nav-link"{% endif %}></li>
       {% endfor %}
     </ul>
-  </div>
+  </div>-->
 
-   <div class="progress-nav">
+   <!--<div class="progress-nav">
     <ul class="navbar-nav">
       {% for item in site.data.navigation %}
         <li data-menuanchor="{{ item.link }}" {% if page.url == item.link %} class="active nav-link"{% endif %}></li>
       {% endfor %}
     </ul>
-  </div>
+  </div>-->
 
   <!-- Optional JavaScript -->
 	  <script src="{{ '/assets/js/jquery/jquery-3.5.1.min.js' | prepend: site.baseurl}}"></script>
